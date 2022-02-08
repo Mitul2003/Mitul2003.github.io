@@ -1,0 +1,266 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* logo an image */
+
+#logo {
+    height: 74px;
+    margin: 8px 42px;
+}
+#logo img {
+    height: 82px;
+    width: 68px;
+    clip-path: circle();
+    border: rgb(255, 0, 0) solid 2px;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    position: relative;
+}
+
+ul {
+    display: flex; 
+    position: absolute;
+    right: 34px;
+    top: 31px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+#navbar ul li a:active {
+    color: black;
+    background-color: rgb(236, 28, 28);
+}
+
+/* Section Tag */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 72px;
+    height: 700px;
+    /* align-items: left;
+    justify-content: center;*/
+} 
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('photo/home_BackGround.jpg') no-repeat center center/cover;
+    height: 800px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}   
+
+/* services section */
+#serives{
+    margin: 34px;
+    display: flex;
+}
+/* #serives .box{
+    border: 2px solid red;
+    margin: 3px 6px;
+    padding: 34px;
+    border-radius: 28px;
+    background-color: rgb(196, 196, 196);
+} */
+#serives .box {
+    border: 2px solid brown;
+    margin: 3px 46px;
+    padding: 34px;
+    border-radius: 28px;
+    background-color: #e1e1e17a;;
+    margin-bottom: 20px;
+}
+#serives .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+#serives .box p{
+    font-size: 1rem;
+}
+
+/* information tag */
+
+#info-section {
+    background-color: rgb(235 235 235);
+    display: flex;
+    height: 700px;
+    /* margin: 100px 0px; */
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+
+#info {
+    display: flex;
+}
+
+.info-item img {
+    height: 194px;
+    width: 350px;
+    clip-path: circle();
+    position: absolute;
+    display: flex;
+    left: 1066px;
+    margin-top: 57px;
+}
+
+#info-text {
+    display: flex;
+    margin-top: 55px;
+    padding-left: 275px;
+    position: absolute;
+    font-family: 'New Tegomin', serif;
+    color: #7272ac;
+}
+
+/* ifomation of Map images */
+
+#map{
+    display: block;
+    height: 100px;
+    width: 100%;
+    padding-top: 380px;
+}
+#map img{
+    display: flex;
+    width: 1519px;
+}
+
+/* Details tag */
+
+#gym-Delails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+#gym-facility {
+    font-size: 2rem;
+}
+
+/* footbar */
+
+.footbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    z-index: -1;
+}
+
+.footbar p {
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 0px 5px;
+    padding-top: 6px;
+}
+
+.footbar p a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.footbar p a:hover {
+    color: black;
+    background-color: rgb(114, 114, 114);
+
+}
+
+/* H1 tag and H1 Primary Tag */
+
+#home h1 {
+    display: block;
+    color: white;
+    text-align: left;
+    font-family: 'New Tegomin', serif;
+    animation: Mitul 5s ease-in 1s 12 backwards;
+}
+
+.h-primary {
+    font-size: 2.7rem;
+    padding: 29px 3px;
+    
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Rubik', sans-serif;
+}
+@keyframes Mitul
+{
+    0%{
+        color: white;
+    }
+    25%{
+        color: yellow;
+        }
+    50%{
+        color: violet;
+
+    }
+    75%{
+        color: tomato;
+
+    }
+    100%{
+        color: yellowgreen;
+    }
+}
+
+.center{
+    text-align: center;
+}

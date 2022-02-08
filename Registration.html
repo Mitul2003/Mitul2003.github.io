@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Registration Page</title>
+    <link rel="stylesheet" href="Registration.css">
+    <script src="Registration.js"></script>
+</head>
+
+<body>
+
+    <div class="regform">
+        <h1>
+            Registration Form</h1>
+    </div>
+    <div class="main">
+
+        <form method="POST" autocomplete="on" onsubmit="return myfun()">
+            <div id="name">
+                <h2 class="name">
+                    Name </h2>
+                <input class="firstname" type="text" name="first_name" id="First_name" value=""><br>
+                <label class="firstlabel" for="text" id="FMessage" value="">first name</label>
+                <input class="lastname" type="text" name="last_name" id="Last_name" value=""><br>
+                <label class="lastlabel" for="lastname" id="LMessage" value="">last name</label>
+            </div>
+            <h2 class="name">
+                Refarl's Name </h2>
+            <input class="company" type="text" name="company">
+            <h2 class="name">
+                Username</h2>
+            <input class="email" type="text" name="email" id="Email" value="">
+
+            <h2 class="name">
+                password</h2>
+            <input class="email" type="password" name="passeord" id="Password" placeholder="Enter your Password"
+                value="">
+            <br><span class="password" id="LPassword"></span>
+
+            <h2 class="name">
+                Phone</h2>
+            <input class="Code" type="text" name="area_code" id="code" pattern="+" title="You must be enter '+'">
+            <label class="area-code" for="code">Area Code</label>
+            <input class="number" type="text" name="phone" id="phone-Number" onkeydown="mynum()" value="">
+            <label class="phone-number" for="phone-Number" id="Lphone-Number" value="">Phone Number</label>
+
+            <br>
+            <br>
+            <div class="radioo">
+                <h2 id="coustomer">
+                    Gender</h2>
+                <label class="radio" style="padding-left: 85px;">
+                    <input class="radio-one" type="radio" checked="checked" name="mygender">
+                    <span class="checkmark"></span>
+                    Male
+                </label>
+                <label class="radio">
+                    <input class="radio-two" type="radio" name="mygender">
+                    <span class="checkmark"></span>
+                    Female
+                </label>
+                <label class="radio">
+                    <input class="radio-three" type="radio" name="mygender">
+                    <span class="checkmark"></span>
+                    other
+                </label>
+            </div>
+            <br>
+            <br>
+
+            <br>
+            <div>
+                <h2 class="name">
+                    Date</h2><input class="company" type="date" name="mydate" id="Date">
+            </div>
+            <br>
+
+            <div class="chatboxx">
+                <h2 class="name" style="margin-top: -2px;">Workout</h2>
+                <input style="display: block;
+                            padding-left: 12px;
+                            margin-left: 51px;" type="checkbox" id="MasalGain" name="MasalGain" value="">
+                <label class="chatbox" for="MasalGain"> MasalGain</label><br>
+                <input type="checkbox" id="GrowHeight" name="GrowHeight" value="">
+                <label class="chatbox" for="GrowHeight"> GrowHeight</label><br>
+                <input type="checkbox" id="Waitloss" name="Waitloss" value="">
+                <label class="chatbox" for="Waitloss">Waitloss</label><br><br>
+            </div>
+
+            <h2 class="name">
+                Workout Time</h2>
+            <label for="workoutTime"></label>
+            <select class="option" name="subject">
+                <option disabled="disabled" selected="selected" id="workoutTime">--Choose option--</option>
+                <optgroup label="Morning">
+                    <option value="">5 to 7 AM</option>
+                    <option value="">8 to 10 AM</option>
+                </optgroup>
+                <optgroup label="Noon">
+                    <option value="">5 to 7 PM</option>
+                    <option value="">8 to 10 PM</option>
+                </optgroup>
+            </select>
+
+            <label for="Time" class="range">Your Age (Between 15 to 75):</label>
+            <input class="rangee" type="range" id="vol" name="vol" min="0" max="50">
+
+            <div style="display: flex;">
+                <button type="submit">Register</button>
+                <input class="reset" type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
